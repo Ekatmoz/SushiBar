@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Wok = () => {
   return (
     <section className='py-24 sm:py-32'>
@@ -88,9 +90,9 @@ const Wok = () => {
             Rendel most <i className='bx bx-right-arrow-alt'></i>
           </a>
 
-          <a href='#' className='text-sm font-semibold text-white hover:underline'>
+          <Link to='/menu' className='text-sm font-semibold text-white hover:underline'>
             Check our menu <span aria-hidden='true'>→</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

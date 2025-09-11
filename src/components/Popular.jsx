@@ -39,7 +39,7 @@ const Popular = () => {
             Rendel most <i className='bx bx-right-arrow-alt'></i>
           </a>
 
-          <Link to='/about' className='text-sm font-semibold text-white hover:underline'>
+          <Link to='/menu' className='text-sm font-semibold text-white hover:underline'>
             Check our menu <span aria-hidden='true'>→</span>
           </Link>
         </div>
