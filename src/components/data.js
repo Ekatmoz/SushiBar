@@ -1,0 +1,42 @@
+export const products = [
+  {
+    id: 1,
+    name: "Sushi Box",
+    description: "A Sushi Boxunk naponta változó kínálata 2-szer 4 fajta sushi tekercset, és ket nigirit tartalmaz.",
+    price: "3990Ft",
+    image: "/box.jpg",
+    imageAlt: 'Sushi Box',
+  },
+  {
+    id: 2,
+    name: "Sushi Box Plusz",
+    description: "A Sushi Boxunk naponta változó kínálata 2-szer 4 fajta sushi tekercset, és ket nigirit tartalmaz.",
+    price: "3990Ft",
+    image: "/boxplus.jpg",
+    imageAlt: 'Sushi Box Plus',
+  },
+  {
+    id: 3,
+    name: "Sushi Ship",
+    description: "A Sushi Boxunk naponta változó kínálata 2-szer 4 fajta sushi tekercset, és ket nigirit tartalmaz.",
+    price: "9990Ft",
+    image: "/ship.jpg",
+    imageAlt: 'Sushi Ship',
+  },
+  {
+    id: 4,
+    name: "Családi tál",
+    description: "A Sushi Boxunk naponta változó kínálata 2-szer 4 fajta sushi tekercset, és ket nigirit tartalmaz.",
+    price: "17990Ft",
+    image: "/familybox.jpeg",
+    imageAlt: 'Family plate',
+  },
+  {
+    id: 5,
+    name: "Prémium Sushi Ship",
+    description: "A Sushi Boxunk naponta változó kínálata 2-szer 4 fajta sushi tekercset, és ket nigirit tartalmaz.",
+    price: "21990Ft",
+    image: "/premium.jpeg",
+    imageAlt: 'Premium Sushi Ship',
+  },
+]
