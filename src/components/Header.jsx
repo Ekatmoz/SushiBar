@@ -68,7 +68,12 @@ const Header = () => {
           <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
             Kapcsolat
           </a>
-          <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href="tel:06707916990">
+          <a
+            href='tel:+36707916990'
+            target='_self'
+            rel='noopener noreferrer'
+            className='text-base tracking-wider transition-colors hover:text-gray-300 z-50'
+          >
             +3670 791 6990
           </a>
           <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
