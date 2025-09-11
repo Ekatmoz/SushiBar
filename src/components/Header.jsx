@@ -19,15 +19,15 @@ const Header = () => {
       <h1 className='text-1xl md:text-2xl lg:text-3xl font-light m-0 ml-16'>SUSHI & WOK BAR</h1>
       <img src='/Logo.png' alt='Logo' className='h-auto w-20 absolute' />
       <nav className='hidden md:flex items-center gap-12'>
-        <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='/'>
+        <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/'>
           Home
-        </a>
+        </Link>
         <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to="/about">
           Rólunk
         </Link>
-        <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='/menu'>
+        <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/menu'>
           Étlap
-        </a>
+        </Link>
         <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
           Kapcsolat
         </a>
