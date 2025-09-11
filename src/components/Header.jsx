@@ -1,4 +1,5 @@
 import 'boxicons/css/boxicons.min.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   //Simple function to toggle the mobile menu
@@ -18,13 +19,13 @@ const Header = () => {
       <h1 className='text-1xl md:text-2xl lg:text-3xl font-light m-0 ml-16'>SUSHI & WOK BAR</h1>
       <img src='/Logo.png' alt='Logo' className='h-auto w-20 absolute' />
       <nav className='hidden md:flex items-center gap-12'>
-        <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
+        <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='/'>
           Home
         </a>
-        <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
+        <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to="/about">
           Rólunk
-        </a>
-        <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
+        </Link>
+        <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='/menu'>
           Étlap
         </a>
         <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
