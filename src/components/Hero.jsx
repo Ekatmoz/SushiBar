@@ -1,4 +1,5 @@
 import 'boxicons/css/boxicons.min.css';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -30,13 +31,13 @@ const Hero = () => {
             <i class='bx bx-calendar-star'></i>
             Book a table
           </a>
-          <a
+          <Link
             className='border border-[#2a2a2a] py-2 sm:py-3 px-8 sm:px-10 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a] bg-gray-300 text-black hover:text-white'
-            href='#'
+            to='/menu'
           >
             <i class='bx bxs-food-menu'></i>
             Check the menu
-          </a>
+          </Link>
         </div>
       </div>
 
