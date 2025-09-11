@@ -1,4 +1,5 @@
 import { products } from './data';
+import { Link } from 'react-router-dom';
 
 const Popular = () => {
   return (
@@ -38,9 +39,9 @@ const Popular = () => {
             Rendel most <i className='bx bx-right-arrow-alt'></i>
           </a>
 
-          <a href='#' className='text-sm font-semibold text-white hover:underline'>
+          <Link to='/about' className='text-sm font-semibold text-white hover:underline'>
             Check our menu <span aria-hidden='true'>→</span>
-          </a>
+          </Link>
         </div>
       </div>
 

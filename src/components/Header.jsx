@@ -22,7 +22,7 @@ const Header = () => {
         <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/'>
           Home
         </Link>
-        <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to="/about">
+        <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/about'>
           Rólunk
         </Link>
         <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/menu'>
@@ -31,7 +31,7 @@ const Header = () => {
         <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
           Kapcsolat
         </a>
-        <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
+        <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='tel:+36707916990'>
           +3670 791 6990
         </a>
         <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
@@ -56,30 +56,30 @@ const Header = () => {
         className='hidden fixed top-16 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-black bg-opacity-70 backdrop-blur-md'
       >
         <nav className='flex flex-col gap-6 items-center'>
-          <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
+          <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/'>
             Home
-          </a>
-          <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
+          </Link>
+          <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/about'>
             Rólunk
-          </a>
-          <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
+          </Link>
+          <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/menu'>
             Étlap
-          </a>
-          <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
-            Gallery
-          </a>
+          </Link>
           <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
             Kapcsolat
+          </a>
+          <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='tel:+36707916990'>
+            +3670 791 6990
           </a>
           <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
             en
           </a>
-           <a
-        href='https://rendeles.sushibarsiofok.com/rendeles'
-        className='md:block bg-[#a7a7a7] text-black py-2 px-8 rounded-full border-none font-medium transition-all dura hover:bg-white cursor-pointer z-50'
-      >
-        Rendel most <i class='bx bx-right-arrow-alt'></i>
-      </a>
+          <a
+            href='https://rendeles.sushibarsiofok.com/rendeles'
+            className='md:block bg-[#a7a7a7] text-black py-2 px-8 rounded-full border-none font-medium transition-all dura hover:bg-white cursor-pointer z-50'
+          >
+            Rendel most <i class='bx bx-right-arrow-alt'></i>
+          </a>
         </nav>
       </div>
     </header>
