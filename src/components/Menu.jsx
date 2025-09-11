@@ -1,3 +1,4 @@
+import allergen from '../assets/Allergens.pdf'
 const Menu = () => {
   return (
     <section>
@@ -21,9 +22,9 @@ const Menu = () => {
             Rendel most <i className='bx bx-right-arrow-alt'></i>
           </a>
 
-          <a href='allergies.html' target='_blank' className='text-sm font-semibold text-white hover:underline'>
+          <button  onClick={() => window.open(allergen, '_blank')} target='_blank' className='text-sm font-semibold text-white hover:underline'>
             Allergén <span aria-hidden='true'>→</span>
-          </a>
+          </button>
         </div>
         </div>
       </div>
