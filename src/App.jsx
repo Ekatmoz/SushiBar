@@ -2,8 +2,9 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import Popular from './components/Popular';
-import Wok from './components/wok';
 import AboutUs from './components/AboutUs';
+import Wok from './components/Wok';
+
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
       <Header />
       <Hero />
       <Popular />
-      <Wok />
+      <Wok/>
       <AboutUs />
       <Footer />
     </main>
