@@ -25,7 +25,7 @@ const Header = () => {
         <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to="/about">
           Rólunk
         </Link>
-        <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='/https://namisushibar.netlify.app/menu'>
+        <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='/menu'>
           Étlap
         </a>
         <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
