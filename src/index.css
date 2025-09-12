@@ -5,8 +5,11 @@
 @layer base {
 
   body {
+    @apply bg-[#1A1A1F] text-white relative font-sans h-screen;
     max-width: 100%;
-    overflow-x: hidden;
-    @apply bg-[#1A1A1F] text-white relative font-sans h-screen overflow-x-hidden;
+    overflow-x: hidden
+  }
+  img, video {
+    @apply max-w-full h-auto;
   }
 }
