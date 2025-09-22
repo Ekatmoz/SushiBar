@@ -6,7 +6,7 @@ const Popular = () => {
     <section className='relative bg-[#25252d] z-10 py-16 md:py-20 lg:py-28'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl lg:mx-0'>
-          <p className='mt-6 text-m text-pretty sm:text-xl/8'>Popular Products</p>
+          <p className='mt-6 text-m text-pretty sm:text-xl/8'>Népszerű Termékek</p>
         </div>
         <div className='mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8'>
           {products.map((product) => (
@@ -40,7 +40,7 @@ const Popular = () => {
           </a>
 
           <Link to='/menu' className='text-sm font-semibold text-white hover:underline'>
-            Check our menu <span aria-hidden='true'>→</span>
+            Nézd meg az Étlapunkat <span aria-hidden='true'>→</span>
           </Link>
         </div>
       </div>

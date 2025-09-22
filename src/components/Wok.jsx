@@ -91,7 +91,7 @@ const Wok = () => {
           </a>
 
           <Link to='/menu' className='text-sm font-semibold text-white hover:underline'>
-            Check our menu <span aria-hidden='true'>→</span>
+            Nézd meg az Étlapunkat<span aria-hidden='true'>→</span>
           </Link>
         </div>
       </div>

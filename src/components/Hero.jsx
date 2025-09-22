@@ -29,14 +29,14 @@ const Hero = () => {
             target='_blank'
           >
             <i class='bx bx-calendar-star'></i>
-            Book a table
+              Asztal Foglalás
           </a>
           <Link
             className='border border-[#2a2a2a] py-2 sm:py-3 px-8 sm:px-10 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a] bg-gray-300 text-black hover:text-white'
             to='/menu'
           >
             <i class='bx bxs-food-menu'></i>
-            Check the menu
+              Étlap
           </Link>
         </div>
       </div>
