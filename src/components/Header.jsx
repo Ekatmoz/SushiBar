@@ -37,7 +37,7 @@ const Header = () => {
         href='https://rendeles.sushibarsiofok.com/rendeles'
         className='hidden md:block bg-[#a7a7a7] text-black py-2 px-8 rounded-full border-none font-medium transition-all dura hover:bg-white cursor-pointer z-50'
       >
-        Rendel most <i class='bx bx-right-arrow-alt'></i>
+        Rendelj most <i class='bx bx-right-arrow-alt'></i>
       </a>
       {/* Mobile Menu Toggle Button */}
       <button
