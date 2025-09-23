@@ -19,7 +19,7 @@ const Menu = () => {
             href='https://rendeles.sushibarsiofok.com/rendeles'
             className='bg-[#a7a7a7] text-black py-2 px-8 rounded-full font-medium transition-colors duration-200 hover:bg-white cursor-pointer z-50'
           >
-            Rendel most <i className='bx bx-right-arrow-alt'></i>
+            Rendelj most <i className='bx bx-right-arrow-alt'></i>
           </a>
 
           <button  onClick={() => window.open(allergen, '_blank')} target='_blank' className='text-sm font-semibold text-white hover:underline'>
