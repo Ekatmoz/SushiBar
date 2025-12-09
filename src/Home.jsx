@@ -24,11 +24,11 @@ const Home = () => {
             <div className='flex justify-around gap-6'>
               <div
                 className='w-64 h-64 rounded-xl bg-center bg-cover bg-no-repeat'
-                style={{ backgroundImage: "url('/Christmas_box.jpeg')" }}
+                style={{ backgroundImage: "url('/Christmas_box.webp')" }}
               ></div>
               <div
                 className='w-64 h-64 rounded-xl bg-center bg-cover bg-no-repeat'
-                style={{ backgroundImage: "url('/Christmas_plate.jpeg')" }}
+                style={{ backgroundImage: "url('/Christmas_plate.webp')" }}
               ></div>
             </div>
             <h3 className='text-lg text-center font-semibold text-gray-900 mt-8 text-pretty sm:text-xl/8'>

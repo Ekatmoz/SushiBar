@@ -43,7 +43,7 @@ const Hero = () => {
 
       {/* Image */}
       <div className='absolute w-full lg:top-0 lg:left-[50%]'>
-        <img src='/sushi.png' alt='Sushi image' className='w-full max-w-[650px] h-auto object-contain' />
+        <img src='/sushi.webp' alt='Sushi image' className='w-full max-w-[650px] h-auto object-contain' />
       </div>
     </main>
   );
