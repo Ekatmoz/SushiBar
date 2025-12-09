@@ -35,14 +35,14 @@ const Home = () => {
               🎄 Már leadhatjátok karácsonyi előrendeléseiteket december 24-re! 🎄
             </h3>
             <div className='text-center'>
-              <p className='mt-2 text-sm text-gray-500'>📍 Siófoki átvétel: 11:00–12:00</p>
-              <p className='mt-2 text-sm text-gray-500'>
+              <p className='mt-2 text-sm text-gray-900'>📍 Siófoki átvétel: 11:00–12:00</p>
+              <p className='mt-2 text-sm text-gray-900'>
                 🚚 Vidék kiszállítás az alábbi városokba: Balatonlelle, Keszthely, Hévíz, Zalaegerszeg, Nagykanizsa,
                 Zalakaros, Kaposvár, Tamási, Dombóvár
               </p>
-              <p className='mt-2 text-sm text-gray-500'>Kiszállítás időpontja: 11:00–13:00 🕘</p>
-              <p className='mt-2 text-sm text-gray-500'>Rendelési határidő: december 22. 21:00</p>
-              <p className='mt-2 text-sm text-gray-500'>
+              <p className='mt-2 text-sm text-gray-900'>Kiszállítás időpontja: 11:00–13:00 🕘</p>
+              <p className='mt-2 text-sm text-gray-900'>Rendelési határidő: december 22. 21:00</p>
+              <p className='mt-2 text-sm text-gray-900'>
                 📞 Rendelés leadása weboldalon vagy telefonon: 06 70 791 6990
               </p>
             </div>
