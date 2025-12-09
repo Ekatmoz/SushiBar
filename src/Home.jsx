@@ -3,6 +3,7 @@ import Popular from './components/Popular';
 import AboutUs from './components/AboutUs';
 import Wok from './components/Wok';
 import { useState, useEffect } from 'react';
+import Banner from './components/Banner';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,6 +55,7 @@ const Home = () => {
         </div>
       )}
       <Hero />
+      <Banner/>
       <Popular />
       <Wok />
       <AboutUs />
