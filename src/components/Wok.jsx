@@ -16,7 +16,7 @@ const Wok = () => {
         </p>
         {/* KAO PAD */}
         <div className='mt-10 grid gap-4 sm:mt-16 lg:grid-cols-4 lg:grid-rows-2'>
-          <div className='lg:col-span-2 bg-[url(/wok.jpeg)] bg-center bg-cover rounded-lg flex'>
+          <div className='lg:col-span-2 bg-[url(/wok.webp)] bg-center bg-cover rounded-lg flex'>
             <div className='px-8 pt-4 pb-3 sm:px-10 sm:pt-10 sm:pb-0 w-full lg:h-1/2 bg-gradient-to-t from-black/70 to-black/20'>
               <p className='text-lg font-medium text-shadow-lg/20 tracking-tight text-[#fefefc] max-lg:text-center '>
                 Kao Pad
@@ -28,12 +28,12 @@ const Wok = () => {
             </div>
           </div>
 
-          <div className='max-lg:row-start-1 bg-[url(/epic-food.jpg)] bg-center bg-cover rounded-lg'></div>
+          <div className='max-lg:row-start-1 bg-[url(/epic-food.webp)] bg-center bg-cover rounded-lg'></div>
 
           {/* PAD THAI */}
           <div className='relative lg:row-span-2 bg-[#25252d] rounded-xl flex flex-col overflow-hidden'>
             {/* Mobile background image + gradient */}
-            <div className="absolute inset-0 lg:hidden bg-[url('/wok2.jpg')] bg-cover bg-center">
+            <div className="absolute inset-0 lg:hidden bg-[url('/wok2.webp')] bg-cover bg-center">
               <div className='absolute inset-0 bg-gradient-to-t from-black/70 to-black/20'></div>
             </div>
 
@@ -47,15 +47,15 @@ const Wok = () => {
             </div>
 
             {/* Desktop image */}
-            <div className="hidden lg:flex relative w-full flex-1 items-center justify-center p-4 bg-[url('/wok2.jpg')] bg-center bg-cover rounded-lg"></div>
+            <div className="hidden lg:flex relative w-full flex-1 items-center justify-center p-4 bg-[url('/wok2.webp')] bg-center bg-cover rounded-lg"></div>
           </div>
 
-          <div className='max-lg:row-start-3 lg:col-start-1 lg:row-start-2 bg-[url(/fryingpan.jpg)] bg-center bg-cover rounded-lg'></div>
+          <div className='max-lg:row-start-3 lg:col-start-1 lg:row-start-2 bg-[url(/fryingpan.webp)] bg-center bg-cover rounded-lg'></div>
 
           {/* Tonkatsu */}
           <div className='relative lg:col-span-2 flex overflow-hidden rounded-lg'>
             {/* Mobile background image + gradient */}
-            <div className="absolute inset-0 lg:hidden bg-[url('/tonkatsu.jpeg')] bg-cover bg-center">
+            <div className="absolute inset-0 lg:hidden bg-[url('/tonkatsu.webp')] bg-cover bg-center">
               <div className='absolute inset-0 bg-gradient-to-t from-black/70 to-black/20'></div>
             </div>
 
@@ -75,7 +75,7 @@ const Wok = () => {
             {/* Desktop image */}
             <div className='hidden lg:flex relative w-full items-center justify-center'>
               <img
-                src='/tonkatsu.jpeg'
+                src='/tonkatsu.webp'
                 alt='Tonkatsu'
                 className='w-full h-auto max-h-[28rem] object-contain rounded-lg'
               />
