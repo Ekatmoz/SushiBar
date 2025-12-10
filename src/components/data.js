@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     name: "Sushi Box",
-    description: "A Sushi Boxunk naponta változó kínálata 2-szer 4 fajta sushi tekercset, és ket nigirit tartalmaz.",
+    description: "2 db sake maki, 2 db vegán maki, 2 db Arizona maki, 2 db California maki, 1 db ebi nigiri, 1 db chucka nigiri.",
     price: "3990Ft",
     image: "/box.webp",
     imageAlt: 'Sushi Box',
@@ -10,7 +10,7 @@ export const products = [
   {
     id: 2,
     name: "Sushi Box Plusz",
-    description: "A Sushi Boxunk naponta változó kínálata 2-szer 4 fajta sushi tekercset, és ket nigirit tartalmaz.",
+    description: "4 db sake maki, 4 db vegán maki, 2 db Arizona maki, 2 db California maki, 1 db ebi nigiri, 1 db chucka nigiri.",
     price: "3990Ft",
     image: "/boxplus.webp",
     imageAlt: 'Sushi Box Plus',
@@ -18,7 +18,7 @@ export const products = [
   {
     id: 3,
     name: "Sushi Ship",
-    description: "A Sushi Boxunk naponta változó kínálata 2-szer 4 fajta sushi tekercset, és ket nigirit tartalmaz.",
+    description: "8 db sake maki, 8 db uborkás maki, 4 db Arizona maki, 4 db California maki, 2 db ebi nigiri, 2 db chuka nigiri, forrázott szójabab",
     price: "9990Ft",
     image: "/ship.webp",
     imageAlt: 'Sushi Ship',
@@ -26,7 +26,7 @@ export const products = [
   {
     id: 4,
     name: "Családi tál",
-    description: "A Sushi Boxunk naponta változó kínálata 2-szer 4 fajta sushi tekercset, és ket nigirit tartalmaz.",
+    description: "16 db sake maki, 16 db uborkás maki, 8 db Arizona maki, 8 db California maki, 4 db ebi nigiri, 4 db chuka nigiri, forrázott szójabab.",
     price: "17990Ft",
     image: "/familybox.webp",
     imageAlt: 'Family plate',
@@ -34,7 +34,7 @@ export const products = [
   {
     id: 5,
     name: "Prémium Sushi Ship",
-    description: "A Sushi Boxunk naponta változó kínálata 2-szer 4 fajta sushi tekercset, és ket nigirit tartalmaz.",
+    description: "8 db sake maki, 4 db California maki, 8 db futomaki, 8 db Philadelphia maki, 1 db chucka nigiri, 1 db tobiko gunkan nigiri, 1 db ikura gunkan nigiri, 2 db unagi nigiri, 1 db sake sashimi, forrázott szójabab.",
     price: "21990Ft",
     image: "/premium.webp",
     imageAlt: 'Premium Sushi Ship',
