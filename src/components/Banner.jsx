@@ -13,12 +13,12 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="relative h-80 overflow-hidden">
+    <div className="relative h-96 overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/Christmas_banner.webp')",
-          height: "130%",       
+          backgroundImage: "url('/test.webp')",
+          height: "120%",       
           transform: `translateY(${offset}px) scale(1.2)`,
           transformOrigin: "center",
         }}
