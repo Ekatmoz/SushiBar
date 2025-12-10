@@ -9,7 +9,7 @@ const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    setIsOpen(true); // open on page load
+    setIsOpen(true); 
   }, []);
 
   return (
