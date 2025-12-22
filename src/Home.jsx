@@ -2,21 +2,21 @@ import Hero from './components/Hero';
 import Popular from './components/Popular';
 import AboutUs from './components/AboutUs';
 import Wok from './components/Wok';
-import { useState, useEffect } from 'react';
-import Banner from './components/Banner';
+// import { useState, useEffect } from 'react';
+// import Banner from './components/Banner';
 
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    setIsOpen(true); 
-  }, []);
+  // useEffect(() => {
+  //   setIsOpen(true); 
+  // }, []);
 
   return (
     <div>
       <img className='absolute top-0 right-0 opacity-60 -z-10' src='/gradient.png' alt='Gradient-img' />
       <div className='h-0 w-[40rem] absolute top-[20%] right-[-5%] shadow-[0_0_900px_20px_#e99b63] -rotate-[30deg]'></div>
-      {isOpen && (
+      {/* {isOpen && (
         <div className='fixed inset-0 z-50 flex items-center justify-center'>
           <div className='fixed inset-0 bg-gray-500/75' onClick={() => setIsOpen(false)}></div>
 
@@ -53,9 +53,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
       <Hero />
-      <Banner/>
+      {/* <Banner/> */}
       <Popular />
       <Wok />
       <AboutUs />
