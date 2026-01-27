@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Popular = () => {
   return (
-    <section className='relative bg-[#25252d] z-10 py-16 md:py-20 lg:py-28'>
+    <section className='relative bg-[#25252d] z-10 py-16 md:py-20'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl lg:mx-0'>
           <p className='mt-6 text-m text-pretty sm:text-xl/8'>Népszerű Termékek</p>
@@ -40,7 +40,7 @@ const Popular = () => {
           </a>
 
           <Link to='/menu' className='text-sm font-semibold text-white hover:underline'>
-            Nézd meg az Étlapunkat <span aria-hidden='true'>→</span>
+            Étlap<span aria-hidden='true'>→</span>
           </Link>
         </div>
       </div>

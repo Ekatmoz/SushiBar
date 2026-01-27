@@ -9,7 +9,11 @@ const Hero = () => {
         <div className='relative w-[95%] sm:w-48 h-10 bg-gradient-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full'>
           <div className='absolute inset-[3px] bg-[#1A1A1F] rounded-full flex items-center justify-center gap-1'>
             <i class='bx bx-diamond'></i>
-            Mindig Friss.
+          <a
+        href='https://rendeles.sushibarsiofok.com/rendeles'
+      >
+        Rendelj most
+      </a>
           </div>
         </div>
 
