@@ -73,7 +73,8 @@ const Header = () => {
               Étlap
             </Link>
             <a
-              href='https://azsiamarket.myshopify.com/'
+              href='https://asianmarket.hu/'
+              target='_blank'
               onClick={closeMenu}
               className='text-base tracking-wider transition-colors hover:text-gray-300 z-50'
             >
