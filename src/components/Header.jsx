@@ -24,7 +24,7 @@ const Header = () => {
         </Link>
         <a
           className='text-base tracking-wider transition-colors hover:text-gray-300 z-50'
-          href='https://azsiamarket.myshopify.com/'
+          href='https://asianmarket.hu/'
           target='_blank'
           rel='noopener noreferrer'
         >
