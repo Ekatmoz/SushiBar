@@ -6,7 +6,7 @@ const Footer = () => {
           {/* Logo + Socials */}
           <div className='flex flex-col m-2 mr-10'>
             <a href='/' className='inline-block'>
-              <img src='/Logo.png' alt='logo' className='w-20 sm:w-28 md:w-36 lg:w-40 h-auto' />
+              <img src='/logo_vector.webp' alt='logo' className='w-20 sm:w-28 md:w-36 lg:w-40 h-auto' />
             </a>
 
             <div className='flex justify-center space-x-4'>
