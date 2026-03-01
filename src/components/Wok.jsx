@@ -7,12 +7,12 @@ const Wok = () => {
         <div className='flex justify-center'>
           <div className='relative w-[95%] sm:w-48 h-10 bg-gradient-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full'>
             <div className='absolute inset-[3px] bg-[#1A1A1F] rounded-full flex items-center justify-center gap-1'>
-              What's new?
+              Újdonságok
             </div>
           </div>
         </div>
         <p className='mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl rounded-full'>
-          Check Our Wok Menu
+          Wok Ételeink
         </p>
         {/* KAO PAD */}
         <div className='mt-10 grid gap-4 sm:mt-16 lg:grid-cols-4 lg:grid-rows-2'>
