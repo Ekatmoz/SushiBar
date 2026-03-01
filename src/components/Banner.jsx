@@ -1,33 +1,48 @@
-import { useEffect, useState } from "react";
+// src/components/Banner.jsx
+import { useEffect, useRef } from 'react';
 
 const Banner = () => {
-  const [offset, setOffset] = useState(0);
+  const bgRef = useRef(null);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      setOffset(window.scrollY * 0.35); 
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const offset = window.scrollY * 0.35;
+
+          if (bgRef.current) {
+            bgRef.current.style.transform =
+              `translateY(${offset}px) scale(1.2)`;
+          }
+
+          ticking = false;
+        });
+
+        ticking = true;
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () =>
+      window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div className="relative h-96 overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        ref={bgRef}
+        className="absolute inset-0 bg-cover bg-center will-change-transform"
         style={{
           backgroundImage: "url('/test.webp')",
-          height: "120%",       
-          transform: `translateY(${offset}px) scale(1.2)`,
-          transformOrigin: "center",
+          height: '120%',
+          transformOrigin: 'center',
         }}
       />
-      <div className="relative flex items-center justify-center h-full">
-        {/* <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl text-gray-700 font-semibold tracking-wider shadow-sm bg-white p-5 border border-gray-200 bg-opacity-70 rounded-xl">
-          Boldog Karácsonyt!
-        </h1> */}
-      </div>
+
+      <div className="relative flex items-center justify-center h-full" />
     </div>
   );
 };

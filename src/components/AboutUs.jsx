@@ -51,7 +51,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className='absolute bottom-0 z-[-1] h-full w-full bg-[url(/shape.png)] bg-cover bg-center bg-no-repeat'></div>
+      <div className='absolute bottom-0 z-[-1] h-full w-full bg-[url(/shape.webp)] bg-cover bg-center bg-no-repeat'></div>
     </section>
   );
 };

@@ -15,6 +15,7 @@ const Popular = () => {
                 alt={product.imageAlt}
                 src={product.image}
                 loading="lazy"
+                decoding='async'
                 className='aspect-square w-full rounded-md object-cover group-hover:opacity-75 lg:aspect-auto lg:h-60'
               />
               <div className='mt-4 flex justify-between'>
@@ -48,7 +49,7 @@ const Popular = () => {
         </div>
       </div>
 
-      <div className='absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/shape.png)] bg-cover bg-center bg-no-repeat'></div>
+      <div className='absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/shape.webp)] bg-cover bg-center bg-no-repeat'></div>
     </section>
   );
 };
