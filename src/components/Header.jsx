@@ -1,4 +1,3 @@
-import 'boxicons/css/boxicons.min.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -9,10 +8,12 @@ const Header = () => {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className='relative flex justify-between item-center py-4 px-4 lg:px-20'>
-      <h1 className='text-1xl md:text-2xl lg:text-3xl font-light m-0 ml-16'>SUSHI & WOK BAR</h1>
-      <img src='/Logo.png' alt='Logo' className='h-auto w-20 absolute' />
-      <nav className='hidden md:flex items-center gap-12'>
+    <header className='relative flex justify-between items-center py-4 px-4 lg:px-20'>
+      <div className='flex items-center'>
+      <h1 className='text-1xl md:text-2xl lg:text-3xl font-light m-0 ml-20'>SUSHI & WOK BAR</h1>
+      <img src='/logo_vector.webp' alt='Logo' loading='eager' decoding='async' className='h-auto w-20 absolute' />
+      </div>
+      <nav className='hidden md:flex lg:flex items-center gap-12'>
         <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/'>
           Home
         </Link>
@@ -30,19 +31,23 @@ const Header = () => {
         >
           Web Shop
         </a>
-        <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='tel:+36707916990'>
-          +3670 791 6990
-        </a>
+
         {/* <a className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' href='#'>
           en
         </a> */}
       </nav>
       <a
+        className='hidden md:block text-base tracking-wider transition-colors hover:text-gray-300 z-50'
+        href='tel:+36707916990'
+      >
+        +3670 791 6990
+      </a>
+      {/* <a
         href='https://rendeles.sushibarsiofok.com/rendeles'
         className='hidden md:block bg-[#a7a7a7] text-black py-2 px-8 rounded-full border-none font-medium transition-all dura hover:bg-white cursor-pointer z-50'
       >
         Rendelj most <i class='bx bx-right-arrow-alt'></i>
-      </a>
+      </a> */}
       {/* Mobile Menu Toggle Button */}
       <button onClick={toggleMobileMenu} className='md:hidden text-3xl p-2 z-50' aria-label='Toggle mobile menu'>
         <i className={`bx ${menuOpen ? 'bx-x' : 'bx-menu'}`}></i>

@@ -1,4 +1,3 @@
-import 'boxicons/css/boxicons.min.css';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
@@ -19,9 +18,9 @@ const Hero = () => {
 
         {/* Main Heading */}
         <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#fefefc] font-semibold tracking-wider my-8'>
-          If You Love Sushi Then
+          Ha Szereted A Sushit
           <br />
-          You’ll Love Us.
+          Minket Imádni Fogsz.
         </h1>
         {/* Description
         <p className='text-lg sm:text-lg tracking-wider text-gray-400 max-w-[25rem] lg:max-w-[30rem]'>Mindig Friss.</p> */}

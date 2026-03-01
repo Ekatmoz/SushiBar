@@ -14,6 +14,7 @@ const Popular = () => {
               <img
                 alt={product.imageAlt}
                 src={product.image}
+                loading="lazy"
                 className='aspect-square w-full rounded-md object-cover group-hover:opacity-75 lg:aspect-auto lg:h-60'
               />
               <div className='mt-4 flex justify-between'>

@@ -9,7 +9,7 @@ export const products = [
   },
   {
     id: 2,
-    name: "Sushi Box Plusz",
+    name: "Sushi Box Plus",
     description: "4db sake maki, 4db vegán maki, 2db Arizona maki, 2db California maki, 1db ebi nigiri, 1db chucka nigiri.",
     price: "3990Ft",
     image: "/boxplus.webp",
@@ -17,7 +17,7 @@ export const products = [
   },
   {
     id: 3,
-    name: "Sushi Ship",
+    name: "Sushi Hajó",
     description: "8db sake maki, 8db uborkás maki, 4db Arizona maki, 4db California maki, 2db ebi nigiri, 2db chuka nigiri, forrázott szójabab",
     price: "9990Ft",
     image: "/ship.webp",
@@ -33,10 +33,18 @@ export const products = [
   },
   {
     id: 5,
-    name: "Prémium Sushi Ship",
-    description: "8db sake maki, 4db California maki, 8db futomaki, 8db Philadelphia maki, 1db chucka nigiri, 1db tobiko gunkan nigiri, 1db ikura gunkan nigiri, 2db unagi nigiri, 1db sake sashimi, forrázott szójabab.",
+    name: "Prémium Sushi Hajó",
+    description: "8db Sake maki, 4db California maki, 8db futomaki, 8db Philadelphia maki, 1db chucka nigiri, 1db tobiko gunkan nigiri, 1db ikura gunkan nigiri, 2db unagi nigiri, 1db sake sashimi, forrázott szójabab.",
     price: "21990Ft",
     image: "/premium.webp",
+    imageAlt: 'Premium Sushi Ship',
+  },
+   {
+    id: 6,
+    name: "Bento Box",
+    description: "8db sushi (Sake maki, Kappa maki, Arizona maki, California maki),2 db nigiri (Csuka, Ebi), japán mochi szezonális gyümölcsökkel, választható: miso tofu, edamame vagy tempura rák édes chilivel.",
+    price: "21990Ft",
+    image: "/Bento.jpeg",
     imageAlt: 'Premium Sushi Ship',
   },
 ]
