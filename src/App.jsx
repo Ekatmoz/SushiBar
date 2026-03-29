@@ -1,19 +1,27 @@
+import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Menu from './components/Menu';
-import AboutUs from './components/AboutUs';
+
+const Home = lazy(() => import('./Home'));
+const Menu = lazy(() => import('./components/Menu'));
+const AboutUs = lazy(() => import('./components/AboutUs'));
+
+function PageFallback() {
+  return <div className='min-h-[50vh]' aria-hidden />;
+}
 
 function App() {
   return (
     <main>
       <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/menu' element={<Menu />} />
-        <Route path='/about' element={<AboutUs />} />
-      </Routes>
+      <Suspense fallback={<PageFallback />}>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/menu' element={<Menu />} />
+          <Route path='/about' element={<AboutUs />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </main>
   );

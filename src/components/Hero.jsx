@@ -7,7 +7,7 @@ const Hero = () => {
         {/* Tag box-with gradient border */}
         <div className='relative w-[95%] sm:w-48 h-10 bg-gradient-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full'>
           <div className='absolute inset-[3px] bg-[#1A1A1F] rounded-full flex items-center justify-center gap-1'>
-            <i class='bx bx-diamond'></i>
+            <i className='bx bx-diamond' aria-hidden />
           <a
         href='https://rendeles.sushibarsiofok.com/rendeles'
       >
@@ -31,14 +31,14 @@ const Hero = () => {
             href='https://reservours.com/sushibarsiofok/tablereservation?s=website'
             target='_blank'
           >
-            <i class='bx bx-calendar-star'></i>
+            <i className='bx bx-calendar-star' aria-hidden />
               Asztal Foglalás
           </a>
           <Link
             className='border border-[#2a2a2a] py-2 sm:py-3 px-8 sm:px-10 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a] bg-gray-300 text-black hover:text-white'
             to='/menu'
           >
-            <i class='bx bxs-food-menu'></i>
+            <i className='bx bxs-food-menu' aria-hidden />
               Étlap
           </Link>
         </div>
@@ -46,7 +46,15 @@ const Hero = () => {
 
       {/* Image */}
       <div className='absolute w-full lg:top-0 lg:left-[50%]'>
-        <img src='/sushi.webp' alt='Sushi image' className='w-full max-w-[650px] h-auto object-contain' />
+        <img
+          src='/sushi.webp'
+          alt='Sushi image'
+          width={650}
+          height={650}
+          fetchPriority='high'
+          decoding='async'
+          className='w-full max-w-[650px] h-auto object-contain'
+        />
       </div>
     </main>
   );

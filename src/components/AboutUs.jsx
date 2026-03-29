@@ -41,12 +41,16 @@ const AboutUs = () => {
             <img
               alt='Sushi Bar'
               src='/Sushi-bar_001.webp'
-              className='relative z-20 w-72 sm:w-80 md:w-96 rounded-xl shadow-xl ring-1 ring-white/10'
+              decoding='async'
+              fetchPriority='high'
+              className='relative z-20 w-72 sm:w-80 md:w-96 h-auto rounded-xl shadow-xl ring-1 ring-white/10'
             />
             <img
               src='/Sushi-bar_006.webp'
               alt='Our team'
-              className='absolute top-4 right-[-20px] w-64 sm:w-72 md:w-80 rounded-xl shadow-lg z-10'
+              loading='lazy'
+              decoding='async'
+              className='absolute top-4 right-[-20px] w-64 sm:w-72 md:w-80 h-auto rounded-xl shadow-lg z-10'
             />
           </div>
         </div>

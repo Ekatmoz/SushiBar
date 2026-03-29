@@ -1,9 +1,10 @@
+import { lazy, Suspense } from 'react';
 import Hero from './components/Hero';
 import Popular from './components/Popular';
-import AboutUs from './components/AboutUs';
 import Wok from './components/Wok';
-// import { useState, useEffect } from 'react';
 import Banner from './components/Banner';
+
+const AboutUs = lazy(() => import('./components/AboutUs'));
 
 const Home = () => {
   // const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +59,9 @@ const Home = () => {
       <Banner/>
       <Popular />
       <Wok />
-      <AboutUs />
+      <Suspense fallback={null}>
+        <AboutUs />
+      </Suspense>
     </div>
   );
 };
