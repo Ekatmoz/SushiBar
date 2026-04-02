@@ -1,12 +1,16 @@
-import { products } from './data';
+import { getProducts } from './data';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../i18n/useLanguage';
 
 const Popular = () => {
+  const { lang, t } = useLanguage();
+  const products = getProducts(lang);
+
   return (
     <section className='relative bg-[#25252d] z-10 py-16 md:py-20'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl lg:mx-0'>
-          <p className='mt-6 text-m text-pretty sm:text-xl/8'>Népszerű Termékek</p>
+          <p className='mt-6 text-m text-pretty sm:text-xl/8'>{t('popular.title')}</p>
         </div>
         <div className='mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8'>
           {products.map((product) => (
@@ -40,11 +44,11 @@ const Popular = () => {
             href='https://rendeles.sushibarsiofok.com/rendeles'
             className='bg-[#a7a7a7] text-black py-2 px-8 rounded-full font-medium transition-colors duration-200 hover:bg-white cursor-pointer z-50'
           >
-            Rendelj most <i className='bx bx-right-arrow-alt'></i>
+            {t('popular.orderNow')} <i className='bx bx-right-arrow-alt' aria-hidden />
           </a>
 
           <Link to='/menu' className='text-sm font-semibold text-white hover:underline'>
-            Étlap<span aria-hidden='true'>→</span>
+            {t('popular.menu')}<span aria-hidden='true'>→</span>
           </Link>
         </div>
       </div>

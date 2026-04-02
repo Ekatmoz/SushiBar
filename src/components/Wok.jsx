@@ -1,18 +1,21 @@
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../i18n/useLanguage';
 
 const Wok = () => {
+  const { t } = useLanguage();
+
   return (
     <section className='py-24 sm:py-32'>
       <div className='mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8'>
         <div className='flex justify-center'>
           <div className='relative w-[95%] sm:w-48 h-10 bg-gradient-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full'>
             <div className='absolute inset-[3px] bg-[#1A1A1F] rounded-full flex items-center justify-center gap-1'>
-              Újdonságok
+              {t('wok.badge')}
             </div>
           </div>
         </div>
         <p className='mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl rounded-full'>
-          Wok Ételeink
+          {t('wok.title')}
         </p>
         {/* KAO PAD */}
         <div className='mt-10 grid gap-4 sm:mt-16 lg:grid-cols-4 lg:grid-rows-2'>
@@ -22,7 +25,7 @@ const Wok = () => {
                 Kao Pad
               </p>
               <p className='mt-2 max-w-lg text-sm/6 text-[#fefefc] max-lg:text-center text-shadow-lg/20 '>
-                Thai tojásos sült jázmin rizs, roppanós zöldségekkel
+                {t('wok.kaoPadDesc')}
               </p>
               <p className='text-shadow-lg/20 max-lg:text-center'>4990Ft</p>
             </div>
@@ -41,7 +44,7 @@ const Wok = () => {
             <div className='relative z-10 px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0'>
               <p className='text-lg font-medium text-white max-lg:text-center'>Pad Thai</p>
               <p className='mt-2 text-sm text-gray-300 max-lg:text-center'>
-                Rizstészta, thai szószok, koriander, mogyoró, szezám, tojás, roppanós zöldségek, csírák
+                {t('wok.padThaiDesc')}
               </p>
               <p className='mt-2 text-white font-semibold max-lg:text-center mb-4'>4990 Ft</p>
             </div>
@@ -66,8 +69,7 @@ const Wok = () => {
             <div className='relative z-10 p-4 flex flex-col justify-center'>
               <p className='mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center'>Tonkatsu</p>
               <p className='mt-2 max-w-lg text-sm/6 text-gray-300 max-lg:text-center'>
-                Panko morzsában rántott sertéskaraj tojásos rizzsel, tonkatsu szósszal, roppanós csírákkal és lime-mal
-                tálalva.
+                {t('wok.tonkatsuDesc')}
               </p>
               <p className='mt-2 text-white font-semibold max-lg:text-center'>4990 Ft</p>
             </div>
@@ -87,11 +89,11 @@ const Wok = () => {
             href='https://rendeles.sushibarsiofok.com/rendeles'
             className='bg-[#a7a7a7] text-black py-2 px-8 rounded-full font-medium transition-colors duration-200 hover:bg-white cursor-pointer z-50'
           >
-            Rendelj most <i className='bx bx-right-arrow-alt'></i>
+            {t('wok.orderNow')} <i className='bx bx-right-arrow-alt' aria-hidden />
           </a>
 
           <Link to='/menu' className='text-sm font-semibold text-white hover:underline'>
-            Étlap<span aria-hidden='true'>→</span>
+            {t('wok.menu')}<span aria-hidden='true'>→</span>
           </Link>
         </div>
       </div>

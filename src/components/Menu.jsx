@@ -1,4 +1,5 @@
 import allergen from '../assets/Allergens.pdf';
+import { useLanguage } from '../i18n/useLanguage';
 
 const CLOUDINARY = 'https://res.cloudinary.com/dtj7rhgwl/image/upload';
 
@@ -18,6 +19,8 @@ const MENU_IMAGES = [
 ];
 
 const Menu = () => {
+  const { t } = useLanguage();
+
   return (
     <section>
       <img className='absolute top-0 right-0 opacity-60 -z-10' src='/gradient.png' alt='' />
@@ -25,9 +28,9 @@ const Menu = () => {
 
       <div className='mx-auto max-w-7xl px-6 lg:px-8 lg:mt-20 flex justify-center'>
         <div className='mx-auto max-w-2xl lg:mx-0 text-center'>
-          <h1 className='text-5xl font-semibold text-white sm:text-7xl'>Étlap</h1>
+          <h1 className='text-5xl font-semibold text-white sm:text-7xl'>{t('menuPage.title')}</h1>
           <p className='mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8'>
-            Széles választékkal, amiben mindenki megtalálja a saját ízlésének megfelelőt.
+            {t('menuPage.description')}
           </p>
 
           <div className='flex justify-center items-center m-6 gap-6'>
@@ -35,7 +38,7 @@ const Menu = () => {
               href='https://rendeles.sushibarsiofok.com/rendeles'
               className='bg-[#a7a7a7] text-black py-2 px-8 rounded-full font-medium transition-colors duration-200 hover:bg-white cursor-pointer z-50'
             >
-              Rendelj most <i className='bx bx-right-arrow-alt' aria-hidden />
+              {t('menuPage.orderNow')} <i className='bx bx-right-arrow-alt' aria-hidden />
             </a>
 
             <button
@@ -43,7 +46,7 @@ const Menu = () => {
               onClick={() => window.open(allergen, '_blank')}
               className='text-sm font-semibold text-white hover:underline'
             >
-              Allergén <span aria-hidden='true'>→</span>
+              {t('menuPage.allergens')} <span aria-hidden='true'>→</span>
             </button>
           </div>
         </div>
@@ -52,7 +55,7 @@ const Menu = () => {
         <img
           key={id}
           src={menuImageUrl(id)}
-          alt={`Étlap oldal ${index + 1}.`}
+          alt={`${t('menuPage.pageAlt')} ${index + 1}.`}
           width={1400}
           sizes='(max-width: 768px) 100vw, min(1400px, 100vw)'
           loading={index === 0 ? 'eager' : 'lazy'}

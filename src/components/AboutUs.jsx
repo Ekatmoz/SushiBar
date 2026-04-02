@@ -1,37 +1,24 @@
-const features = [
-  {
-    name: 'Delivery',
-    description:
-      'Szomszédos városokban átvételi pontokat üzemeltetünk szezonálisan, vagy egész évben, emellett hoteleknek és éttermeknek is szállítjuk frissen készült sushijainkat viszont eladásra.',
-  },
-  {
-    name: 'Updates',
-    description: 'Folyamatosan bővítjük kínálatunkat, hogy mindig újdonságokkal tudjunk Nektek szolgálni!',
-  },
-  {
-    name: 'Workshop',
-    description: 'A téli időszakban már hagyomány, hogy sushi készítő tanfolyamokat tartunk hobbi szakácsoknak.',
-  },
-];
+import { useLanguage } from '../i18n/useLanguage';
 
 const AboutUs = () => {
+  const { t } = useLanguage();
+  const features = t('about.features');
+
   return (
     <section className='relative z-10 bg-gray-300 py-24 sm:py-32 overflow-hidden'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start'>
           <div className='lg:pt-4'>
-            <p className='text-4xl sm:text-5xl font-semibold tracking-tight text-[#1A1A1F]'>Rólunk</p>
+            <p className='text-4xl sm:text-5xl font-semibold tracking-tight text-[#1A1A1F]'>{t('about.title')}</p>
             <p className='mt-6 text-base text-[#1A1A1F]'>
-              A Sushi Bár egész évben várja a japán és ázsiai konyha szerelmeseit, télen-nyáron immár hetedik éve.
-              Legyen szó baráti találkozóról, családi vacsoráról vagy különleges alkalomról, nálunk mindig otthonos,
-              barátságos környezetben élvezhetitek a sushi és más ázsiai fogások varázsát.
+              {t('about.description')}
             </p>
 
             <dl className='mt-6 space-y-4 text-base text-gray-900'>
               {features.map((feature) => (
-                <div key={feature.name} className='flex items-start space-x-3'>
+                <div key={feature} className='flex items-start space-x-3'>
                   <i className='bx bx-check-double text-gray-500 text-xl flex-shrink-0'></i>
-                  <dd>{feature.description}</dd>
+                  <dd>{feature}</dd>
                 </div>
               ))}
             </dl>

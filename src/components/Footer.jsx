@@ -1,4 +1,8 @@
+import { useLanguage } from '../i18n/useLanguage';
+
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className='relative bg-[#25252d] z-10 pt-16 md:pt-20 lg:pt-24 '>
       <div>
@@ -24,7 +28,7 @@ const Footer = () => {
                 aria-label='social-link'
                 className='flex items-center justify-center w-10 h-10 rounded-full border border-white  text-gray-300 hover:bg-white hover:text-[#25252d] transition'
               >
-                <i class='bx bxl-instagram-alt text-xl'></i>
+                <i className='bx bxl-instagram-alt text-xl'></i>
               </a>
             </div>
           </div>
@@ -33,9 +37,9 @@ const Footer = () => {
             <div className='flex items-start space-x-3 text-sm sm:text-base md:text-lg'>
               <i className='bx bxs-phone-call text-xl md:text-2xl'></i>
               <div>
-                <h4 className='font-semibold'>Asztalfoglalás</h4>
+                <h4 className='font-semibold'>{t('footer.reservation')}</h4>
                 <p>
-                  <strong>Telefon:</strong> +36 70 791 6990
+                  <strong>{t('footer.phone')}:</strong> +36 70 791 6990
                   <br />
                   <strong>Email:</strong> info@sushibarhungary.hu
                   <br />
@@ -47,9 +51,9 @@ const Footer = () => {
             <div className='flex items-start space-x-3 text-sm sm:text-base md:text-lg'>
               <i className='bx bx-time-five text-xl md:text-2xl'></i>
               <div>
-                <h4 className='font-semibold'>Nyitvatartás</h4>
+                <h4 className='font-semibold'>{t('footer.openingHours')}</h4>
                 <p>
-                  <strong>Hétfő-Vasárnap:</strong> 11:00 - 21:00
+                  <strong>{t('footer.mondaySunday')}:</strong> 11:00 - 21:00
                   <br />
                 </p>
               </div>
@@ -59,7 +63,7 @@ const Footer = () => {
             <div className='flex items-start space-x-3 text-sm sm:text-base md:text-lg'>
               <i className='bx bx-map text-xl md:text-2xl'></i>
               <div>
-                <h4 className='font-semibold'>Cím</h4>
+                <h4 className='font-semibold'>{t('footer.address')}</h4>
                 <p>Siófok, Vitorlás u. 1.-3, 8600</p>
               </div>
             </div>
@@ -71,10 +75,10 @@ const Footer = () => {
         {/* Bottom Text */}
         <div className='py-8'>
           <p className='text-center text-base text-body-color dark:text-white'>
-            © Copyright Sushi Bar Hungary. All Rights Reserved
+            © {t('footer.copyright')}
           </p>
           <p className='text-center text-base text-body-color dark:text-white'>
-            Designed by{' '}
+            {t('footer.designedBy')}{' '}
             <a href='https://siocreativeit.hu/' rel='nofollow noopener'>
               Sio Creative IT 2025.
             </a>

@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../i18n/useLanguage';
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
-    <main className='flex lg:mt-20 flex-col lg:flex-row items-center justify-between min-h-[calc(90vh-6rem)]'>
+    <main className='relative flex lg:mt-20 flex-col lg:flex-row items-center justify-between min-h-[calc(90vh-6rem)] overflow-hidden'>
       <div className='max-w-xl ml-[5%] z-10 mt-[90%] md:mt-[60%] lg:mt-0'>
         {/* Tag box-with gradient border */}
         <div className='relative w-[95%] sm:w-48 h-10 bg-gradient-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full'>
@@ -11,16 +14,16 @@ const Hero = () => {
           <a
         href='https://rendeles.sushibarsiofok.com/rendeles'
       >
-        Rendelj most
+        {t('hero.orderNow')}
       </a>
           </div>
         </div>
 
         {/* Main Heading */}
         <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#fefefc] font-semibold tracking-wider my-8'>
-          Ha Szereted A Sushit
+          {t('hero.title1')}
           <br />
-          Minket Imádni Fogsz.
+          {t('hero.title2')}
         </h1>
         {/* Description
         <p className='text-lg sm:text-lg tracking-wider text-gray-400 max-w-[25rem] lg:max-w-[30rem]'>Mindig Friss.</p> */}
@@ -32,20 +35,20 @@ const Hero = () => {
             target='_blank'
           >
             <i className='bx bx-calendar-star' aria-hidden />
-              Asztal Foglalás
+              {t('hero.reserveTable')}
           </a>
           <Link
             className='border border-[#2a2a2a] py-2 sm:py-3 px-8 sm:px-10 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a] bg-gray-300 text-black hover:text-white'
             to='/menu'
           >
             <i className='bx bxs-food-menu' aria-hidden />
-              Étlap
+              {t('hero.menu')}
           </Link>
         </div>
       </div>
 
       {/* Image */}
-      <div className='absolute w-full lg:top-0 lg:left-[50%]'>
+      <div className='absolute inset-x-0 top-0 w-full lg:left-[50%] pointer-events-none z-0'>
         <img
           src='/sushi.webp'
           alt='Sushi image'
