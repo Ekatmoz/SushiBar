@@ -26,7 +26,7 @@ const Hero = () => {
           {t('hero.title2')}
         </h1>
         {/* Description
-        <p className='text-lg sm:text-lg tracking-wider text-gray-400 max-w-[25rem] lg:max-w-[30rem]'>Mindig Friss.</p> */}
+
         {/* Buttons */}
         <div className='flex gap-4 mt-8 mb-10'>
           <a
