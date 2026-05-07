@@ -25,6 +25,9 @@ const Header = () => {
         <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/menu'>
           {t('nav.menu')}
         </Link>
+        <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/catering'>
+          {t('nav.catering')}
+        </Link>
         <a
           className='text-base tracking-wider transition-colors hover:text-gray-300 z-50'
           href='https://asianmarket.hu/'
@@ -83,6 +86,13 @@ const Header = () => {
               className='text-base tracking-wider transition-colors hover:text-gray-300 z-50'
             >
               {t('nav.about')}
+            </Link>
+            <Link
+              to='/catering'
+              onClick={closeMenu}
+              className='text-base tracking-wider transition-colors hover:text-gray-300 z-50'
+            >
+              {t('nav.catering')}
             </Link>
             <Link
               to='/menu'

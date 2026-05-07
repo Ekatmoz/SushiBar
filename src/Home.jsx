@@ -56,7 +56,7 @@ const Home = () => {
               WebShop
             </a>
               <button onClick={() => setIsOpen(false)} className='px-4 py-2 bg-gray-600 rounded hover:bg-gray-300'>
-                Close
+                Mégse
               </button>
             </div>
           </div>
@@ -66,6 +66,7 @@ const Home = () => {
       <Banner />
       <Popular />
       <Wok />
+  
       <Suspense fallback={null}>
         <AboutUs />
       </Suspense>

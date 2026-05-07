@@ -6,6 +6,7 @@ export const translations = {
       menu: 'Menu',
       webShop: 'Web Shop',
       orderNow: 'Order Now',
+      catering: 'Catering',
       language: 'Language',
     },
     hero: {
@@ -46,6 +47,16 @@ export const translations = {
       allergens: 'Allergens',
       pageAlt: 'Menu page',
     },
+    cateringPage: {
+      title: 'Price offer',
+      name: 'Name',
+      email: 'Email',
+      phone: 'Phone number',
+      message: 'Message',
+      submit: 'Request a Proposal',
+      submitting: 'Sending...',
+      success: 'Thanks, your request has been sent. We will contact you soon.',
+    },
     footer: {
       reservation: 'Table Reservation',
       phone: 'Phone',
@@ -63,6 +74,7 @@ export const translations = {
       menu: 'Étlap',
       webShop: 'Web Shop',
       orderNow: 'Rendelj most',
+      catering: 'Rendezvények',
       language: 'Nyelv',
     },
     hero: {
@@ -103,6 +115,16 @@ export const translations = {
       orderNow: 'Rendelj most',
       allergens: 'Allergén',
       pageAlt: 'Étlap oldal',
+    },
+    cateringPage: {
+      title: 'Árajánlat',
+      name: 'Név',
+      email: 'E-mail',
+      phone: 'Telefonszám',
+      message: 'Üzenet',
+      submit: 'Ajánlatot kérek',
+      submitting: 'Küldés...',
+      success: 'Köszönjük, az ajánlatkérés elküldve. Hamarosan felvesszük Önnel a kapcsolatot.',
     },
     footer: {
       reservation: 'Asztalfoglalás',
