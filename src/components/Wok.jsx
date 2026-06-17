@@ -5,11 +5,14 @@ const Wok = () => {
   const { t } = useLanguage();
 
   return (
-    <section className='py-24 sm:py-32'>
+    <section className='py-20 sm:py-20'>
       <div className='mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8'>
         <div className='flex justify-center'>
           <div className='relative w-[95%] sm:w-48 h-10 bg-gradient-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full'>
             <div className='absolute inset-[3px] bg-[#1A1A1F] rounded-full flex items-center justify-center gap-1'>
+              <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='currentColor' viewBox='0 0 24 24'>
+                <path d='M20.55 1.68 17.78 10h-1.39l2.56-7.68-1.9-.63-1.76 5.27C14.15 4.62 11.76 3 9 3c-3.86 0-7 3.14-7 7v1c0 3.61 1.9 6.87 5 8.66V21c0 .55.45 1 1 1h8c.55 0 1-.45 1-1v-1.34c3.1-1.78 5-5.05 5-8.66 0-.55-.45-1-1-1h-1.11l2.56-7.68-1.9-.63ZM9 5c2.76 0 5 2.24 5 5h-1.5c0-1.93-1.57-3.5-3.5-3.5S5.5 8.07 5.5 10H4c0-2.76 2.24-5 5-5m1.5 5h-3c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5m5.06 8.16c-.34.17-.56.52-.56.9V20H9v-.94c0-.38-.22-.73-.56-.9A7.93 7.93 0 0 1 4.06 12h15.88a7.94 7.94 0 0 1-4.38 6.16'></path>
+              </svg>
               {t('wok.badge')}
             </div>
           </div>
@@ -43,9 +46,7 @@ const Wok = () => {
             {/* Text content */}
             <div className='relative z-10 px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0'>
               <p className='text-lg font-medium text-white max-lg:text-center'>Pad Thai</p>
-              <p className='mt-2 text-sm text-gray-300 max-lg:text-center'>
-                {t('wok.padThaiDesc')}
-              </p>
+              <p className='mt-2 text-sm text-gray-300 max-lg:text-center'>{t('wok.padThaiDesc')}</p>
               <p className='mt-2 text-white font-semibold max-lg:text-center mb-4'>4990 Ft</p>
             </div>
 
@@ -68,9 +69,7 @@ const Wok = () => {
             {/* Text content */}
             <div className='relative z-10 p-4 flex flex-col justify-center'>
               <p className='mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center'>Tonkatsu</p>
-              <p className='mt-2 max-w-lg text-sm/6 text-gray-300 max-lg:text-center'>
-                {t('wok.tonkatsuDesc')}
-              </p>
+              <p className='mt-2 max-w-lg text-sm/6 text-gray-300 max-lg:text-center'>{t('wok.tonkatsuDesc')}</p>
               <p className='mt-2 text-white font-semibold max-lg:text-center'>4990 Ft</p>
             </div>
 
@@ -84,7 +83,7 @@ const Wok = () => {
             </div>
           </div>
         </div>
-         <div className='flex justify-end items-center mt-4 gap-6'>
+        <div className='flex justify-end items-center mt-4 gap-6'>
           <a
             href='https://rendeles.sushibarsiofok.com/rendeles'
             className='bg-[#a7a7a7] text-black py-2 px-8 rounded-full font-medium transition-colors duration-200 hover:bg-white cursor-pointer z-50'
@@ -92,8 +91,9 @@ const Wok = () => {
             {t('wok.orderNow')} <i className='bx bx-right-arrow-alt' aria-hidden />
           </a>
 
-          <Link to='/menu' className='text-sm font-semibold text-white hover:underline'>
-            {t('wok.menu')}<span aria-hidden='true'>→</span>
+          <Link to='/menu' className='font-semibold text-white hover:underline'>
+            {t('wok.menu')}
+            <span aria-hidden='true'>→</span>
           </Link>
         </div>
       </div>

@@ -30,7 +30,7 @@ const Hero = () => {
         {/* Buttons */}
         <div className='flex gap-4 mt-8 mb-10'>
           <a
-            className='border border-[#2a2a2a] py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a]'
+            className='border border-[#2a2a2a] py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#a7a7a7]'
             href='https://reservours.com/sushibarsiofok/tablereservation?s=website'
             target='_blank'
           >

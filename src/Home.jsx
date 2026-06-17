@@ -66,7 +66,7 @@ const Home = () => {
       <Banner />
       <Popular />
       <Wok />
-  
+      <Catering />
       <Suspense fallback={null}>
         <AboutUs />
       </Suspense>

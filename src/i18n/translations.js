@@ -30,6 +30,13 @@ export const translations = {
       orderNow: 'Order Now',
       menu: 'Menu',
     },
+    catering: {
+      badge: 'Premium experiences',
+      title: 'Catering',
+      description: 'You can organize your event with us or at an external venue—we will ensure a unique experience with authentic Japanese cuisine!',
+      request: 'Request a Proposal',
+      download: 'Download event catalog',
+    },
     about: {
       title: 'About Us',
       description:
@@ -98,6 +105,14 @@ export const translations = {
         'Panko morzsában rántott sertéskaraj tojásos rizzsel, tonkatsu szósszal, roppanós csírákkal és lime-mal tálalva.',
       orderNow: 'Rendelj most',
       menu: 'Étlap',
+    },
+    catering: {
+      badge: 'Prémium élmény',
+      title: 'Rendezvények',
+      description: 'Rendezvényét nálunk vagy akár külső helyszínen is megszervezheti – mi pedig autentikus japán fogásokkal gondoskodunk a különleges élményről! ',
+      paragraph: 'Partner együttműködések hotelekkel, éttermekkel, rendezvényekkel: 50- 1000 fő +. A növekvő vendégigények és elvárások, valamint a dolgozók körülményes betanítása miatt vált népszerűvé ez a szolgáltatásunk. A sushikat egész rollokban szállítva juttatjuk el aszállodákba, ahol az ott dolgozók vágják fel és tálalják ki tematikus vacsorájukra. Egy másik verzió az amikor mi biztosítjuk a tálalást is a helyszínen.',
+      request: 'Ajánlatot kérek',
+      download: 'Letölthető rendezvénykatalógus',
     },
     about: {
       title: 'Rólunk',

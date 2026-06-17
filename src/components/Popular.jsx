@@ -47,7 +47,7 @@ const Popular = () => {
             {t('popular.orderNow')} <i className='bx bx-right-arrow-alt' aria-hidden />
           </a>
 
-          <Link to='/menu' className='text-sm font-semibold text-white hover:underline'>
+          <Link to='/menu' className='font-semibold text-white hover:underline'>
             {t('popular.menu')}<span aria-hidden='true'>→</span>
           </Link>
         </div>

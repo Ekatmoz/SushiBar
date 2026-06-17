@@ -6,7 +6,7 @@ const AboutUs = () => {
 
   return (
     <section className='relative z-10 bg-gray-300 py-24 sm:py-32 overflow-hidden'>
-      <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+      <div className='mx-auto max-w-7xl px-6 lg:px-8 '>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start'>
           <div className='lg:pt-4'>
             <p className='text-4xl sm:text-5xl font-semibold tracking-tight text-[#1A1A1F]'>{t('about.title')}</p>
