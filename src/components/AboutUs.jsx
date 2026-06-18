@@ -26,7 +26,7 @@ const AboutUs = () => {
 
           <div className='relative flex justify-center lg:justify-start mt-10 lg:mt-0'>
             <img
-              alt='Sushi Bar'
+              alt='Nami Sushi & Wok Bar'
               src='/Sushi-bar_001.webp'
               decoding='async'
               fetchPriority='high'

@@ -21,7 +21,7 @@ const Header = () => {
         />
         <h1 className='m-0 leading-none'>
           <span className='block text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wide text-white'>
-            NAMI
+            NAMI 
           </span>
           <span className='block mt-1 text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.2em] uppercase text-gray-300'>
             Sushi &amp; Wok Bar

@@ -40,7 +40,7 @@ export const translations = {
     about: {
       title: 'About Us',
       description:
-        'Sushi Bar welcomes lovers of Japanese and Asian cuisine all year round. Whether it is a friendly get-together, a family dinner, or a special occasion, we offer a warm and welcoming atmosphere with authentic flavors.',
+        'NAMI Sushi & Wok Bar welcomes lovers of Japanese and Asian cuisine all year round. Whether it is a friendly get-together, a family dinner, or a special occasion, we offer a warm and welcoming atmosphere with authentic flavors.',
       features: [
         'We run seasonal and year-round pickup points in nearby cities, and also supply freshly prepared sushi to hotels and restaurants for resale.',
         'We continuously expand our menu so we can always surprise you with something new.',
@@ -117,7 +117,7 @@ export const translations = {
     about: {
       title: 'Rólunk',
       description:
-        'A Sushi Bár egész évben várja a japán és ázsiai konyha szerelmeseit, télen-nyáron immár hetedik éve. Legyen szó baráti találkozóról, családi vacsoráról vagy különleges alkalomról, nálunk mindig otthonos, barátságos környezetben élvezhetitek a sushi és más ázsiai fogások varázsát.',
+        'A NAMI Sushi & Wok Bár egész évben várja a japán és ázsiai konyha szerelmeseit, télen-nyáron immár hetedik éve. Legyen szó baráti találkozóról, családi vacsoráról vagy különleges alkalomról, nálunk mindig otthonos, barátságos környezetben élvezhetitek a sushi és más ázsiai fogások varázsát.',
       features: [
         'Szomszédos városokban átvételi pontokat üzemeltetünk szezonálisan vagy egész évben, emellett hoteleknek és éttermeknek is szállítjuk frissen készült sushijainkat viszonteladásra.',
         'Folyamatosan bővítjük kínálatunkat, hogy mindig újdonságokkal tudjunk Nektek szolgálni.',
