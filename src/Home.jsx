@@ -21,42 +21,29 @@ const Home = () => {
       {isOpen && (
         <div className='fixed inset-0 z-50 flex items-center justify-center'>
           <div className='fixed inset-0 bg-gray-500/75' onClick={() => setIsOpen(false)}></div>
-
           <div className='relative bg-opacity-60 bg-white border border-gray-200 rounded-lg shadow-xl max-w-lg w-full p-6 z-10'>
-            <div className='flex justify-around gap-6'>
-              {/* <div
-                className='w-64 h-64 rounded-xl bg-center bg-cover bg-no-repeat'
-                style={{ backgroundImage: "url('/Christmas_box.webp')" }}
-              ></div> */}
-              <div
-                className='w-64 h-64 rounded-xl bg-center bg-cover bg-no-repeat'
-                style={{ backgroundImage: "url('/webshop.png')" }}
-              ></div>
-            </div>
+            <div
+              className='w-64 h-64 rounded-xl bg-center bg-cover bg-no-repeat'
+              style={{ backgroundImage: "url('/delivery.jpg')" }}
+            ></div>
             <h3 className='text-lg text-center text-gray-900 mt-8 text-pretty sm:text-xl/8'>
-              🍜 Szereted az ázsiai konyhát? 🥢
+              🍜 Nincs kiszállítási díj!🥢
             </h3>
-            <h5 className='text-lg text-center text-gray-900 mt-8 text-pretty sm:text-xl/8'>
-              👩‍🍳 Szívesen kísérleteznél otthon, és kipróbálnál valami újat? 🌶️
+            <h5 className='text-base text-center text-gray-900 mt-8 text-pretty sm:text-xl/6'>
+              Minden weboldalunkon leadott rendelést bármelyik szállítási területünkre díjmentesen szállítjuk ki!
             </h5>
-            <div className='text-center'>
-              <h3 className='text-lg text-center text-gray-900 mt-8 text-pretty sm:text-xl/8'>
-                ✨ Fedezd fel az autentikus ízeket és izgalmas alapanyagokat webshopunkban! 🛒
-              </h3>
-            </div>
-            
-          
             <div className='mt-4 flex justify-end gap-2'>
               <a
-              className='px-4 py-2 bg-gray-600 rounded hover:bg-gray-300'
-              href='https://asianmarket.hu/'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              WebShop
-            </a>
+                className='px-4 py-2 bg-gray-600 rounded hover:bg-gray-300'
+                href='https://rendeles.sushibarsiofok.com/rendeles'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Rendelj most
+              </a>
+
               <button onClick={() => setIsOpen(false)} className='px-4 py-2 bg-gray-600 rounded hover:bg-gray-300'>
-                Mégse
+                OK
               </button>
             </div>
           </div>
