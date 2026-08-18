@@ -1,21 +1,19 @@
 import allergen from '../assets/Allergens.pdf';
 import { useLanguage } from '../i18n/useLanguage';
 
-const CLOUDINARY = 'https://res.cloudinary.com/dtj7rhgwl/image/upload';
-
-/** Optimized delivery: format/quality auto, capped width for viewport. */
-function menuImageUrl(publicIdWithVersion) {
-  return `${CLOUDINARY}/f_auto,q_auto,w_1400/${publicIdWithVersion}`;
-}
-
 const MENU_IMAGES = [
-  'v1754744185/menu_1_copy_rfbxp4.jpg',
-  'v1754746540/menu_2_copy_xt2oai.jpg',
-  'v1754749645/menu_3_copy_ns7dsn.jpg',
-  'v1754755306/menu_4_copy_vrycuh.jpg',
-  'v1754758225/menu_5_1_copy_xpzkcr.jpg',
-  'v1754834546/menu_6_copy_ttobt1.jpg',
-  'v1754835076/menu_7_copy_fcqhls.jpg',
+  '/page1.webp',
+  '/page2.webp',
+  '/page3.webp',
+  '/page4.webp',
+  '/page5.webp',
+  '/page6.webp',
+  '/page7.webp',
+  '/page8.webp',
+  '/page9.webp',
+  '/page10.webp',
+  '/page11.webp',
+  '/page12.webp',
 ];
 
 const Menu = () => {
@@ -51,10 +49,10 @@ const Menu = () => {
           </div>
         </div>
       </div>
-      {MENU_IMAGES.map((id, index) => (
+      {MENU_IMAGES.map((src, index) => (
         <img
-          key={id}
-          src={menuImageUrl(id)}
+          key={src}
+          src={src}
           alt={`${t('menuPage.pageAlt')} ${index + 1}.`}
           width={1400}
           sizes='(max-width: 768px) 100vw, min(1400px, 100vw)'
