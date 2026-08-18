@@ -13,7 +13,6 @@ const MENU_IMAGES = [
   '/page9.webp',
   '/page10.webp',
   '/page11.webp',
-  '/page12.webp',
 ];
 
 const Menu = () => {
