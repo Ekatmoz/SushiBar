@@ -1,3 +1,4 @@
+import catering from '../assets/Partnerkapcsolat.pdf';
 import { useLanguage } from '../i18n/useLanguage';
 import { Link } from 'react-router-dom';
 
@@ -40,9 +41,12 @@ const Catering = () => {
             {t('catering.request')} 
           </Link>
 
-          <Link to='/menu' className='border border-[#a7a7a7] max-w-lg py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm font-medium tracking-wider transition-all duration-300 hover:bg-[#a7a7a7] text-transform: uppercase'>
+          <button 
+            type='button' 
+            onClick={() => window.open(catering, '_blank')}
+            className='border border-[#a7a7a7] max-w-lg py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm font-medium tracking-wider transition-all duration-300 hover:bg-[#a7a7a7] text-transform: uppercase'>
             {t('catering.download')}
-          </Link>
+          </button>
         </div>
         </div>
       </div>
