@@ -33,12 +33,12 @@ const Catering = () => {
           <p className='mt-6 text-base'>{t('catering.description')}</p>
           <p className='mt-6 text-base'>{t('catering.paragraph')}</p>
           <div className='flex flex-col justify-center text-center mt-4 gap-6'>
-          <a
-            href='https://rendeles.sushibarsiofok.com/rendeles'
+          <Link
+            to='/catering'
             className='bg-[#a7a7a7] max-w-56 text-black py-2 px-8 rounded-full font-medium transition-colors duration-200 hover:bg-white cursor-pointer z-50 text-transform: uppercase'
           >
             {t('catering.request')} 
-          </a>
+          </Link>
 
           <Link to='/menu' className='border border-[#a7a7a7] max-w-lg py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm font-medium tracking-wider transition-all duration-300 hover:bg-[#a7a7a7] text-transform: uppercase'>
             {t('catering.download')}
