@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/icon.png" />
     <link rel="preload" as="image" href="/sushi.webp" />
     <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://frontend.cdn.festin.hu/popup.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nami Sushi & Wok Bar</title>
@@ -12,5 +13,11 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="https://frontend.cdn.festin.hu/popup.js"></script>
+    <script>
+      window.fp = new FestInPopup('6a7dc3db9063013e8292a7a9', {
+        frontendUrl: 'https://frontend.festin.hu',
+      });
+    </script>
   </body>
 </html>

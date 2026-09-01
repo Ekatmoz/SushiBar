@@ -23,8 +23,8 @@ const Home = () => {
           <div className='fixed inset-0 bg-gray-500/75' onClick={() => setIsOpen(false)}></div>
           <div className='relative bg-opacity-60 bg-white border border-gray-200 rounded-lg shadow-xl max-w-lg w-full p-6 z-10'>
             <div
-              className='w-64 h-64 rounded-xl bg-center bg-cover bg-no-repeat'
-              style={{ backgroundImage: "url('/delivery.jpg')" }}
+              className='w-100 h-64 rounded-xl bg-center bg-cover bg-no-repeat border-2 border-gray-200'
+              style={{ backgroundImage: "url('/delivery.webp')" }}
             ></div>
             <h3 className='text-lg text-center text-gray-900 mt-8 text-pretty sm:text-xl/8'>
               🍜 Nincs kiszállítási díj!🥢

@@ -8,6 +8,7 @@ export const translations = {
       orderNow: 'Order Now',
       catering: 'Catering',
       language: 'Language',
+      giftVoucher: 'Gift Voucher',
     },
     hero: {
       orderNow: 'Order Now',
@@ -83,6 +84,7 @@ export const translations = {
       orderNow: 'Rendelj most',
       catering: 'Rendezvények',
       language: 'Nyelv',
+      giftVoucher: 'Ajándékutalvány',
     },
     hero: {
       orderNow: 'Rendelj most',

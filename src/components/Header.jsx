@@ -20,9 +20,7 @@ const Header = () => {
           className='h-auto w-14 sm:w-16 md:w-20 shrink-0'
         />
         <h1 className='m-0 leading-none'>
-          <span className='block text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wide text-white'>
-            NAMI 
-          </span>
+          <span className='block text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wide text-white'>NAMI</span>
           <span className='block mt-1 text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.2em] uppercase text-gray-300'>
             Sushi &amp; Wok Bar
           </span>
@@ -42,6 +40,14 @@ const Header = () => {
         <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/menu'>
           {t('nav.menu')}
         </Link>
+        <button
+          type='button'
+          name='festin-button'
+          data-festin-role="opener"
+          className='text-base tracking-wider transition-colors hover:text-gray-300 z-50 bg-transparent border-0 p-0 cursor-pointer'
+        >
+          {t('nav.giftVoucher')}
+        </button>
         <a
           className='text-base tracking-wider transition-colors hover:text-gray-300 z-50'
           href='https://asianmarket.hu/'
@@ -110,6 +116,15 @@ const Header = () => {
             >
               {t('nav.menu')}
             </Link>
+            <button
+              type='button'
+              name='festin-button'
+              data-festin-role='opener'
+              onClick={closeMenu}
+              className='text-base tracking-wider transition-colors hover:text-gray-300 z-50 bg-transparent border-0 p-0 cursor-pointer'
+            >
+              {t('nav.giftVoucher')}
+            </button>
             <a
               href='https://asianmarket.hu/'
               target='_blank'

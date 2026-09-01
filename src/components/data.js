@@ -5,7 +5,7 @@ const productTranslations = {
       name: 'Sushi Box',
       description: '2 pcs sake maki, 2 pcs vegan maki, 2 pcs Arizona maki, 2 pcs California maki, 1 pc ebi nigiri, 1 pc chuka nigiri.',
       price: '3990 Ft',
-      image: '/box.webp',
+      image: '/sushibox_10.webp',
       imageAlt: 'Sushi Box',
     },
     {
@@ -89,7 +89,7 @@ const productTranslations = {
       name: 'Prémium Sushi Hajó',
       description:
         '8 db sake maki, 4 db California maki, 8 db futomaki, 8 db Philadelphia maki, 1 db chuka nigiri, 1 db tobiko gunkan nigiri, 1 db ikura gunkan nigiri, 2 db unagi nigiri, 1 db sake sashimi, forrázott szójabab.',
-      price: '21990 Ft',
+      price: '22990 Ft',
       image: '/premium.webp',
       imageAlt: 'Prémium Sushi Hajó',
     },

@@ -18,7 +18,6 @@ const Popular = () => {
               <img
                 alt={product.imageAlt}
                 src={product.image}
-                loading="lazy"
                 decoding='async'
                 className='aspect-square w-full rounded-md object-cover group-hover:opacity-75 lg:aspect-auto lg:h-60'
               />
