@@ -5,7 +5,7 @@ const productTranslations = {
       name: 'Sushi Box',
       description: '2 pcs sake maki, 2 pcs vegan maki, 2 pcs Arizona maki, 2 pcs California maki, 1 pc ebi nigiri, 1 pc chuka nigiri.',
       price: '3990 Ft',
-      image: '/sushibox_10.webp',
+      image: '/sushibox.webp',
       imageAlt: 'Sushi Box',
     },
     {
