@@ -9,6 +9,7 @@ export const translations = {
       catering: 'Catering',
       language: 'Language',
       giftVoucher: 'Gift Voucher',
+      workshop: 'Sushi Workshop',
     },
     hero: {
       orderNow: 'Order Now',
@@ -65,6 +66,10 @@ export const translations = {
       submitting: 'Sending...',
       success: 'Thanks, your request has been sent. We will contact you soon.',
     },
+    workshopPage: {
+      title: 'Workshop',
+      description: 'We offer sushi-making workshops for home cooking enthusiasts.',
+    },
     footer: {
       reservation: 'Table Reservation',
       phone: 'Phone',
@@ -85,6 +90,7 @@ export const translations = {
       catering: 'Rendezvények',
       language: 'Nyelv',
       giftVoucher: 'Ajándékutalvány',
+      workshop: 'Sushi Workshop',
     },
     hero: {
       orderNow: 'Rendelj most',
@@ -142,6 +148,28 @@ export const translations = {
       submit: 'Ajánlatot kérek',
       submitting: 'Küldés...',
       success: 'Köszönjük, az ajánlatkérés elküldve. Hamarosan felvesszük Önnel a kapcsolatot.',
+    },
+    workshopPage: {
+      title: 'Sushi Workshop Siófokon',
+      badge: 'Ajándékozz különleges élményt!',
+      description: 'Lepd meg szerettedet – vagy akár saját magadat – egy különleges gasztronómiai élménnyel, ahol új ízek, inspiráló hangulat és a japán kultúra találkozik!',
+      paragraph1: 'A siófoki sushi-készítő workshop során betekintést nyerhetsz a japán gasztronómia izgalmas világába, miközben saját kezűleg készíthetsz finom makikat és nigiriket. Profi Sushi Chefjeink végig melletted lesznek, így kezdőként is bátran belevághatsz!',
+      subtitle1: 'A workshop programja',
+      features: [
+        'Érkezéskor gyömbéres-fekete rizses mézbor',
+        'Rövid betekintés a japán kultúrába és gasztronómiába',
+        'Többféle maki és nigiri elkészítése',
+        'Folyamatos szakmai segítség profi Sushi Chefektől',
+        'Autentikus sake kóstoló',
+        'Hasznos sushi tippek, trükkök és tálalási technikák',
+        'A saját készítésű sushi elvitelre – lepd meg vele családodat vagy barátaidat az általad készített sushival!',
+        'Ajándék Sushi Kit és oklevél',
+        'Családias hangulat, mindössze 10–15 fős kis létszámú workshop',
+        'A workshop végén az alapanyagokat kedvezményesen is megvásárolhatod',
+      ],
+      paragraph2: 'A workshop időtartama: körülbelül 2 óra.',
+      button: 'Jegyvásárlás / Jelentkezés',
+      paragraph3: 'Minden szükséges alapanyagot, eszközt és kötényt biztosítunk, neked csak az élményre és a jó hangulatra kell koncentrálnod!',
     },
     footer: {
       reservation: 'Asztalfoglalás',

@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Workshop from './components/Workshop';
 
 const Home = lazy(() => import('./Home'));
 const Menu = lazy(() => import('./components/Menu'));
@@ -22,6 +23,7 @@ function App() {
           <Route path='/menu' element={<Menu />} />
           <Route path='/about' element={<AboutUs />} />
           <Route path='/catering' element={<CateringScreen />} />
+          <Route path='/workshop' element={<Workshop />} />
         </Routes>
       </Suspense>
       <Footer />

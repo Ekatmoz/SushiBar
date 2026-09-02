@@ -15,9 +15,13 @@
     <script type="module" src="/src/main.jsx"></script>
     <script src="https://frontend.cdn.festin.hu/popup.js"></script>
     <script>
-      window.fp = new FestInPopup('6a7dc3db9063013e8292a7a9', {
-        frontendUrl: 'https://frontend.festin.hu',
-      });
+      const openFestin = (id) => {
+        window.fp = new window.FestInPopup(id, {
+          frontendUrl: 'https://frontend.festin.hu',
+        });
+      };
     </script>
   </body>
 </html>
+
+

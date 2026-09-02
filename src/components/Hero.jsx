@@ -46,7 +46,6 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-
       {/* Image */}
       <div className='absolute inset-x-0 top-0 w-full lg:left-[50%] pointer-events-none z-0'>
         <img

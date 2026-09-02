@@ -27,12 +27,9 @@ const Header = () => {
         </h1>
       </Link>
 
-      <nav className='hidden md:flex lg:flex items-center gap-8 lg:gap-12'>
+      <nav className='hidden md:flex lg:flex items-center gap-8 lg:gap-9'>
         <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/'>
           {t('nav.home')}
-        </Link>
-        <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/about'>
-          {t('nav.about')}
         </Link>
         <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/catering'>
           {t('nav.catering')}
@@ -40,11 +37,16 @@ const Header = () => {
         <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/menu'>
           {t('nav.menu')}
         </Link>
+        <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/workshop'>
+          {t('nav.workshop')}
+        </Link>
         <button
           type='button'
           name='festin-button'
           data-festin-role="opener"
           className='text-base tracking-wider transition-colors hover:text-gray-300 z-50 bg-transparent border-0 p-0 cursor-pointer'
+          onClick={() => openFestin('6a7dc3db9063013e8292a7a9')}
+          //6a7dc3db9063013e8292a7a9
         >
           {t('nav.giftVoucher')}
         </button>
@@ -115,6 +117,13 @@ const Header = () => {
               className='text-base tracking-wider transition-colors hover:text-gray-300 z-50'
             >
               {t('nav.menu')}
+            </Link>
+            <Link
+              to='/workshop'
+              onClick={closeMenu}
+              className='text-base tracking-wider transition-colors hover:text-gray-300 z-50'
+            >
+              {t('nav.workshop')}
             </Link>
             <button
               type='button'
