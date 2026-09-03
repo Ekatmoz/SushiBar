@@ -43,10 +43,8 @@ const Header = () => {
         <button
           type='button'
           name='festin-button'
-          data-festin-role="opener"
+          data-festin-role='opener'
           className='text-base tracking-wider transition-colors hover:text-gray-300 z-50 bg-transparent border-0 p-0 cursor-pointer'
-          onClick={() => openFestin('6a7dc3db9063013e8292a7a9')}
-          //6a7dc3db9063013e8292a7a9
         >
           {t('nav.giftVoucher')}
         </button>
@@ -118,13 +116,6 @@ const Header = () => {
             >
               {t('nav.menu')}
             </Link>
-            <Link
-              to='/workshop'
-              onClick={closeMenu}
-              className='text-base tracking-wider transition-colors hover:text-gray-300 z-50'
-            >
-              {t('nav.workshop')}
-            </Link>
             <button
               type='button'
               name='festin-button'
@@ -134,6 +125,7 @@ const Header = () => {
             >
               {t('nav.giftVoucher')}
             </button>
+
             <a
               href='https://asianmarket.hu/'
               target='_blank'

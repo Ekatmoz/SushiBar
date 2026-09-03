@@ -12,16 +12,17 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
     <script src="https://frontend.cdn.festin.hu/popup.js"></script>
+
     <script>
-      const openFestin = (id) => {
-        window.fp = new window.FestInPopup(id, {
+      window.fp = new FestInPopup(
+        '6a7dc3db9063013e8292a7a9',
+        {
           frontendUrl: 'https://frontend.festin.hu',
-        });
-      };
+        }
+      );
     </script>
+
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-
-

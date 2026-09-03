@@ -5,6 +5,14 @@ const Workshop = () => {
   const { t } = useLanguage();
   const features = t('workshopPage.features');
 
+  const openWorkshopFestin = () => {
+    window.fp = new window.FestInPopup('6a95409dc3f12645027773d7', {
+      frontendUrl: 'https://frontend.festin.hu',
+    });
+
+    document.getElementById('workshop-festin-opener')?.click();
+  };
+
   return (
     <section>
       <img className='absolute top-0 right-0 opacity-60 -z-10' src='/gradient.png' alt='light' />
@@ -23,15 +31,16 @@ const Workshop = () => {
           </div>
           <div className='mt-6'>
             <p className='mt-6 text-2xl'>{t('workshopPage.description')}</p>
-            <button
-              type='button'
-              name='festin-button'
-              data-festin-role="opener"
-              className='mt-5 border border-[#a7a7a7] max-w-lg py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm font-medium tracking-wider transition-all duration-300 hover:bg-[#a7a7a7] text-transform: uppercase'
-              onClick={() => openFestin('6a95409dc3f12645027773d7')}
-            >
-              {t('workshopPage.button')}
-            </button>
+            <div className='mt-6'>
+              <a
+                href='https://gofest.in/niZZiu'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='border border-[#a7a7a7] max-w-lg py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm font-medium tracking-wider transition-all duration-300 hover:bg-[#a7a7a7] uppercase'
+              >
+                {t('workshopPage.button')}
+              </a>
+            </div>
           </div>
         </div>
       </div>
