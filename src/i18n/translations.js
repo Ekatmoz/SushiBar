@@ -188,6 +188,9 @@ export const translations = {
       paragraph2: 'A workshop időtartama: körülbelül 2 óra.',
       button: 'Jegyvásárlás / Jelentkezés',
       paragraph3: 'Minden szükséges alapanyagot, eszközt és kötényt biztosítunk, neked csak az élményre és a jó hangulatra kell koncentrálnod!',
+      subtitle2: 'Az utalvány felhasználása',
+      paragraph4: 'A workshopra szóló utalvány készpénzre nem váltható.',
+      paragraph5: 'A weboldalunkon vásárolt, szabad időpontra felhasználható jegyeket a Jegyvásárlás / Jelentkezés menüpontban tudjátok regisztrálni arra a meghirdetett időpontra, amelyik számotokra a legmegfelelőbb. Ugyanitt új jegyet is vásárolhattok.'
     },
     footer: {
       reservation: 'Asztalfoglalás',

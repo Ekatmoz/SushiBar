@@ -33,7 +33,7 @@ const Menu = () => {
           <div className='flex justify-center items-center m-6 gap-6'>
             <a
               href='https://rendeles.sushibarsiofok.com/rendeles'
-              className='bg-[#a7a7a7] text-black py-2 px-8 rounded-full font-medium transition-colors duration-200 hover:bg-white cursor-pointer z-50'
+              className='bg-[#a7a7a7] text-black py-2 px-8 rounded-full font-medium transition-colors duration-200 hover:bg-white cursor-pointer'
             >
               {t('menuPage.orderNow')} <i className='bx bx-right-arrow-alt' aria-hidden />
             </a>

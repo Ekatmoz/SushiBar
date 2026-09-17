@@ -116,6 +116,9 @@ const Header = () => {
             >
               {t('nav.menu')}
             </Link>
+            <Link className='text-base tracking-wider transition-colors hover:text-gray-300 z-50' to='/workshop'>
+              {t('nav.workshop')}
+            </Link>
             <button
               type='button'
               name='festin-button'

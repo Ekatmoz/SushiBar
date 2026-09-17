@@ -49,7 +49,7 @@ const Workshop = () => {
           <div className='absolute inset-0 z-[-1] bg-gradient-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full blur-2xl opacity-50'></div>
           <img
             className='w-full max-h-[560px] rounded-[40px] max-md:px-3 md:mr-10 max-w-xs sm:max-w-sm lg:max-w-md transition-all duration-300'
-            src='/Live_sushi.png'
+            src='/workshop.webp'
             alt='Sushi Live'
           />
         </div>
@@ -67,6 +67,26 @@ const Workshop = () => {
           </dl>
           <p className='text-base mt-3'>{t('workshopPage.paragraph2')}</p>
           <p className='text-base mt-3'>{t('workshopPage.paragraph3')}</p>
+        </div>
+      </div>
+
+      <br/>
+      
+      <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-8 mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8'>
+        <div className='col-span-2 mx-auto max-w-2xl px-6 lg:max-w-7xl'>
+          <h3 className='mt-6 text-3xl font-semibold text-white sm:text-4xl'>{t('workshopPage.subtitle2')}</h3>
+          <p className='text-base mt-3'>{t('workshopPage.paragraph4')}</p>
+          <p className='text-base mt-3'>{t('workshopPage.paragraph5')}</p>
+        </div>
+        
+
+        <div className='flex justify-center relative max-w-[650px] h-auto object-contain'>
+          <div className='absolute inset-0 z-[-1] bg-gradient-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full blur-2xl opacity-50'></div>
+          <img
+            className='w-full max-h-[560px] rounded-[40px] max-md:px-3 md:mr-10 max-w-xs sm:max-w-sm lg:max-w-md transition-all duration-300'
+            src='/Live_sushi.png'
+            alt='Sushi Live'
+          />
         </div>
       </div>
 
